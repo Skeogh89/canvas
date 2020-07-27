@@ -1,0 +1,27 @@
+
+POST https://outlook.office.com/api/v2.0/me/sendmail
+
+{
+  "Message": {
+    "Subject": "Test mail",
+    "Body": {
+      "ContentType": "testing json mail",
+      "Content": "this is test content"
+    },
+    "ToRecipients": [
+      {
+        "EmailAddress": {
+          "Address": "stephen_keogh@jabil.com"
+        }
+      }
+    ],
+    "Attachments": [
+      {
+        "@odata.type": "",
+        "Name": "",
+        "ContentBytes": ""
+      }
+    ]
+  },
+  "SaveToSentItems": "false"
+}
